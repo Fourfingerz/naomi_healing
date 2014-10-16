@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  visiting_date: 2014-10-16 18:50:46
+  concerns_questions: MyText
+  scheduled_date: 2014-10-16 18:50:46
+  scheduled_time: MyString
+  notes_comments: MyText
+  diagnosis_advice: MyText
+  session_length: MyString
+  session_balance_due: 9.99
+  session_balance_paid: 9.99
+  overall_balance: 9.99
+  client_id: 
+
+two:
+  visiting_date: 2014-10-16 18:50:46
+  concerns_questions: MyText
+  scheduled_date: 2014-10-16 18:50:46
+  scheduled_time: MyString
+  notes_comments: MyText
+  diagnosis_advice: MyText
+  session_length: MyString
+  session_balance_due: 9.99
+  session_balance_paid: 9.99
+  overall_balance: 9.99
+  client_id: 
