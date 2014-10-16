@@ -5,4 +5,5 @@ class Client < ActiveRecord::Base
   validates_formatting_of :work_phone, using: :us_phone
   validates_formatting_of :home_phone, using: :us_phone
   validates_formatting_of :email_address, using: :email
+  validates_formatting_of :emergency_contact_phone, using: :us_phone
 end
