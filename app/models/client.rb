@@ -3,4 +3,5 @@ class Client < ActiveRecord::Base
   validates_formatting_of :zip_code, using: :us_zip
   validates_formatting_of :cell_phone, using: :us_phone
   validates_formatting_of :work_phone, using: :us_phone
+  validates_formatting_of :home_phone, using: :us_phone
 end
