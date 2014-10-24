@@ -39,6 +39,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'bundler'
+gem 'casein', '~>5.0.0'
 
 gem 'simple_form'
 gem 'bootstrap-sass', github: 'twbs/bootstrap-sass'
