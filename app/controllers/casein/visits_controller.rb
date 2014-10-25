@@ -9,7 +9,7 @@ module Casein
   
     def index
       @casein_page_title = 'Visits'
-  		@visits = Visit.order(sort_order(:visiting_date)).paginate :page => params[:page]
+  		@visits = Visit.order(sort_order(:scheduled_date)).paginate :page => params[:page]
     end
   
     def show
@@ -59,7 +59,7 @@ module Casein
     private
       
       def visit_params
-        params.require(:visit).permit(:visiting_date, :concerns_questions, :scheduled_date, :scheduled_time, :notes_comments, :diagnosis_advice, :session_length, :session_balance_due, :session_balance_paid, :overall_balance)
+        params.require(:visit).permit(:concerns_questions, :scheduled_date, :notes_comments, :session_length, :session_balance_due, :session_balance_paid, :overall_balance)
       end
 
   end
