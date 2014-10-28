@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141025000415) do
+ActiveRecord::Schema.define(version: 20141026213609) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,18 +56,22 @@ ActiveRecord::Schema.define(version: 20141025000415) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "alternative_phone"
+    t.string   "emergency_contact_name"
+    t.string   "emergency_contact_phone"
+    t.string   "emergency_relationship_to_client"
+    t.string   "concerns_questions"
   end
 
   create_table "visits", force: true do |t|
-    t.text     "concerns_questions"
     t.datetime "scheduled_date"
-    t.text     "notes_comments"
-    t.string   "session_length"
     t.decimal  "session_balance_due"
     t.decimal  "session_balance_paid"
     t.integer  "client_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.datetime "session_length"
+    t.string   "session_type"
+    t.string   "session_notes"
   end
 
   add_index "visits", ["client_id"], name: "index_visits_on_client_id", using: :btree

@@ -24,17 +24,23 @@ GOALS- \
 \b0 -Simplify 
 \b index 
 \b0 \
-	-Appointment Time \
+	-Scheduled date\
 	-Clients (with click thru to ALL visits for THAT client)***\
-	-Type of Work (STRING input field)\
+
+\b 	-Type of Work (STRING input field)
+\b0 \
 	-Session Length\
-	-Balance Due
+	-Balance Due\
+	-Cell Phone\
+	-Alt Phone\
+	-Email Addy
 \b \
 \
 	***\
 	
 \b0 Client 
 \b Click Thru\
+		Index All of Client VISITS!\
 		-\
 BUGS
 \i0\b0 \
@@ -48,16 +54,56 @@ All phones should have template -x-xxx-xxxx- (faded context in text box)\
 \
 
 \i\b Visits\
-\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\i0\b0 \cf0 Visiting date / Scheduled date - Limited to 2009-2019, Open up.\
-Concerns questions - screen wide text box\
-Scheduled time - same box as DATE box\
-Notes comment - screen wide text box \
-Session length - same box as DATE box\
+\i0\b0 \cf0 \
 Session balances ** - hard code to subtract and add\
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\b \cf0 Link client visit click thru in Client screen.}
+\b \cf0 ***MOST RECENT***\
+Add new table rows and form inputs for new fields. (Check latest Migration)
+\b0 \
+\
+\
+
+\i\b Clients\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\i0\b0 \cf0 -Client requests (text area for notes (italics, bold, underline)) \
+-Emergency Contact info \
+-Family Info (relation to client)\
+-Client Document folder (signature, related documents, .doc downloadable)\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 Link client visit click thru in Client screen.\
+\
+\
+\
+\
+*** \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97 ***\
+October 25th, 2014\
+-Online Client Side booking system. (Credit Card Processing, Time)\
+-Physical \
+\
+-Types of Sessions (Relaxation, Therapy, Bodywork)\
+\
+-Client\'92s CC info on FILE in CMS. \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 -Dashboard - Default is 
+\b Day View
+\b0 , opening up to week, month. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 Client Fields
+\b0 \
+Client.first_name, Client.last_name, Client.cell_phone, Client.alternative_phone, Client.email_address
+\b \
+Visits Fields\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 Visit.scheduled_date, Visit.concerns_questions. }

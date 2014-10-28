@@ -3,9 +3,9 @@
 <table class="table table-striped table-hover table-condensed">
 	<thead>
 		<tr>
-			<th><%= casein_sort_link "Concerns questions", :concerns_questions %></th>
+			<th><%= casein_sort_link "Session Type", :session_type %></th>
 			<th><%= casein_sort_link "Scheduled date", :scheduled_date %></th>
-			<th><%= casein_sort_link "Notes comments", :notes_comments %></th>
+			<th><%= casein_sort_link "Session Notes", :session_notes %></th>
 			<th><%= casein_sort_link "Session length", :session_length %></th>
 			<th><%= casein_sort_link "Session balance due", :session_balance_due %></th>
 			<th><%= casein_sort_link "Session balance paid", :session_balance_paid %></th>
@@ -15,9 +15,9 @@
 	
 	<% visits.each do |visit| %>
 		<tr>
-			<td><%= casein_table_cell_link visit.concerns_questions, casein_visit_path(visit) %></td>
+			<td><%= casein_table_cell_link visit.session_type, casein_visit_path(visit) %></td>
 			<td><%= casein_table_cell_link visit.scheduled_date, casein_visit_path(visit) %></td>
-			<td><%= casein_table_cell_link visit.notes_comments, casein_visit_path(visit) %></td>
+			<td><%= casein_table_cell_link visit.session_notes, casein_visit_path(visit) %></td>
 			<td><%= casein_table_cell_link visit.session_length, casein_visit_path(visit) %></td>
 			<td><%= casein_table_cell_link visit.session_balance_due, casein_visit_path(visit) %></td>
 			<td><%= casein_table_cell_link visit.session_balance_paid, casein_visit_path(visit) %></td>

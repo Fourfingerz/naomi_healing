@@ -12,12 +12,17 @@
 			<th><%= casein_sort_link "Zip code", :zip_code %></th>
 			<th><%= casein_sort_link "Cell phone", :cell_phone %></th>
 			<th><%= casein_sort_link "Alternative phone", :alternative_phone %></th>
+
+			<th><%= casein_sort_link "Client Concerns", :concerns_questions %></th>
 			<th><%= casein_sort_link "Gender", :gender %></th>
 			<th><%= casein_sort_link "Birth date", :birth_date %></th>
 			<th><%= casein_sort_link "Email address", :email_address %></th>
 			<th><%= casein_sort_link "Signup date", :signup_date %></th>
 			<th><%= casein_sort_link "Client age", :client_age %></th>
 			<th><%= casein_sort_link "Overall balance", :overall_balance %></th>
+			<th><%= casein_sort_link "Emergency Contact Name", :emergency_contact_name %></th>
+			<th><%= casein_sort_link "Emergency Contact Phone", :emergency_contact_phone %></th>
+			<th><%= casein_sort_link "Emergency Relationship to Client", :emergency_relationship_to_client %></th>
 			<th>&nbsp;</th>
 		</tr>
 	</thead>
@@ -33,12 +38,16 @@
 			<td><%= casein_table_cell_link client.zip_code, casein_client_path(client) %></td>
 			<td><%= casein_table_cell_link client.cell_phone, casein_client_path(client) %></td>
 			<td><%= casein_table_cell_link client.alternative_phone, casein_client_path(client) %></td>
+			<td><%= casein_table_cell_link client.concerns_questions, casein_client_path(client) %></td>
 			<td><%= casein_table_cell_link client.gender, casein_client_path(client) %></td>
 			<td><%= casein_table_cell_link client.birth_date, casein_client_path(client) %></td>
 			<td><%= casein_table_cell_link client.email_address, casein_client_path(client) %></td>
 			<td><%= casein_table_cell_link client.signup_date, casein_client_path(client) %></td>
 			<td><%= casein_table_cell_link client.client_age, casein_client_path(client) %></td>
 			<td><%= casein_table_cell_link client.overall_balance, casein_client_path(client) %></td>
+			<td><%= casein_table_cell_link client.emergency_contact_name, casein_client_path(client) %></td>
+			<td><%= casein_table_cell_link client.emergency_contact_phone, casein_client_path(client) %></td>
+			<td><%= casein_table_cell_link client.emergency_relationship_to_client, casein_client_path(client) %></td> 
 			<td class="delete">
 				<%= link_to(casein_show_row_icon("trash"), casein_client_path(client), :method => :delete, :data => { :confirm => "Are you sure you want to delete this client?" }) %>
 			</td>
