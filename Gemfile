@@ -47,6 +47,7 @@ gem 'bootstrap-sass-extras'
 gem 'binding_of_caller'
 gem 'validates_formatting_of'
 gem 'tzinfo-data'
+gem 'ransack'
 
 group :development do
   gem 'better_errors'
